@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Islands | Travel Website Design</title>
+    <link rel="stylesheet" href="/assets/css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="/assets/css/styles.css" />
     <link
       href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
@@ -42,9 +43,9 @@
 
     <!-- Main -->
     <main class="main">
-      <div>
-        <div>
-          <section class="islands">
+      <div class="swiper-container gallery-top">
+        <div class="swiper-wrapper">
+          <section class="islands swiper-slide">
             <img
               src="/assets/img/borabora.jpg"
               alt="Bora-Bora"
@@ -73,7 +74,7 @@
             </div>
           </section>
 
-          <section class="islands">
+          <section class="islands swiper-slide">
             <img src="/assets/img/bali.jpg" alt="Bali" class="islands__bg" />
 
             <div class="islands__container bd-container">
@@ -98,7 +99,7 @@
             </div>
           </section>
 
-          <section class="islands">
+          <section class="islands swiper-slide">
             <img
               src="/assets/img/palawan.jpg"
               alt="Bora-Bora"
@@ -126,6 +127,45 @@
               </div>
             </div>
           </section>
+
+          <!-- islands pop up -->
+          <div class="islands__popup" id="popup">
+            <div>
+              <div class="islands__popup-close" id="popup-close">
+                <i class="bx bx-x"></i>
+              </div>
+
+              <iframe
+                class="islands__popup-video"
+                src="https://www.youtube.com/embed/Fmw-F4r5sc8"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- controls -->
+      <div class="controls gallery-thumbs">
+        <div class="controls__container swiper-wrapper">
+          <img
+            src="/assets/img/borabora.jpg"
+            alt=""
+            class="controls__img swiper-slide"
+          />
+          <img
+            src="/assets/img/bali.jpg"
+            alt=""
+            class="controls__img swiper-slide"
+          />
+          <img
+            src="/assets/img/palawan.jpg"
+            alt=""
+            class="controls__img swiper-slide"
+          />
         </div>
       </div>
     </main>
@@ -134,7 +174,7 @@
     <script src="/assets/js/gsap.min.js"></script>
 
     <!-- swiper js -->
-    <script src="/assets/js/swiper.min.js"></script>
+    <script src="/assets/js/swiper-bundle.min.js"></script>
 
     <!-- custom js -->
     <script src="/assets/js/main.js"></script>
